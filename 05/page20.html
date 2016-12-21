@@ -16,7 +16,7 @@
 				text-align: justify;
 				/* width:500px; */
 				width: auto;
-				min-width: 400px;
+				min-width: 100px;
 				max-width: 600px;
 				height: 120px;
 				overflow:auto;
@@ -40,16 +40,41 @@
 				/* text-decoration: underline; */
 				background-color: yellow;
 			}
+
+			@media ( max-width: 768px){
+				.box{
+					background-position: 0px -200px !important;
+				}
+			}
+			.box {
+				border:1px solid red;
+				background-color: yellow;
+				background-image: url(./images/chch-city-mall800x600.png); 
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 400px;
+				background-position: 0px -250px;
+			}
+
+			#bg-test{
+				width:74px;
+				height:56px;
+				border:1px solid red;
+				background-image: url(./images/4-images.png);
+				background-repeat: none;
+				background-position: -74px -56px;
+			}
 		</style>
 	</head>
 	<body>
 		<h1 class="title">Lorem ipsum dolor sit amet, consectetur</h1>
-		<div style="border:1px solid red;background-color: yellow;">
+		<div class="box">
 			<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas eum temporibus accusantium sequi nostrum quos molestiae ratione eos, quisquam cupiditate distinctio culpa adipisci veniam laudantium asperiores, explicabo perferendis accusamus? Adipisicing elit. Officiis dolor sed tempore suscipit a laboriosam porro adipisci molestias maiores. Quo in, voluptas magni dicta cupiditate aliquam quis placeat? Aut, molestiae?</div>
 			</div>
 		<div class="info">Consectetur adipisicing elit. Repudiandae hic nemo consequuntur consectetur quibusdam, eius fugit accusamus officiis! Minus dolores ut in officia quibusdam vitae, aspernatur placeat, sint eligendi repellat!</div>
 
 		<div><a href="#">Alias eius, quos</a>. Harum nam sunt similique eum enim iste animi. Iure dolore officia facilis eveniet atque accusamus adipisci nam quo, amet quod deleniti ullam, laborum vero aliquid placeat ducimus.
 		</div>
+		<div id="bg-test"></div>
 	</body>	
 </html>
